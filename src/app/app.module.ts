@@ -3,14 +3,22 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import {HttpClientModule} from '@angular/common/http';
+import { AllCatsComponent } from './all-cats/all-cats.component'
+import {FormsModule} from "@angular/forms";
+import { CatsPaginationComponent } from './cats-pagination/cats-pagination.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    AllCatsComponent,
+    CatsPaginationComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
