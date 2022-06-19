@@ -3,6 +3,9 @@
   <h1>{{messageFirst}}</h1>
 <div class="select-block">
 <div class="container">
+  <div>
+    <label>Quantity pictures cats:</label>
+  </div>
   <select #selectCats (mouseleave)="cangetAllCats(selectCats.value)" (click)="getPaginationCats()" class="form-select" aria-label="Default select example">
     <option value="6">6</option>
     <option value="12">12</option>
@@ -10,11 +13,17 @@
   </select>
 </div>
   <div class="container">
+    <div>
+      <label>Selecting breeds:</label>
+    </div>
     <select #selectBreeds (mouseleave)="cangetAllBreeds(selectBreeds.value)"  (click)="getPaginationCats()" class="form-select" aria-label="Default select example">
       <option selected *ngFor="let breedFirst of responseBreed">{{breedFirst.name}}</option>
     </select>
   </div>
   <div class="container">
+    <div>
+      <label>Selecting categories:</label>
+    </div>
     <select #selectCategories (mouseleave)="cangetAllCategories(selectCategories.value)"  (click)="getPaginationCats()" class="form-select" aria-label="Default select example">
       <option selected *ngFor="let firatCategories of categoriesCats">{{firatCategories.name}}</option>
     </select>
@@ -23,7 +32,7 @@
 <div class="card-pagination">
   <span *ngFor="let item of catsJson">
     <div>
-      <div class="id-card-cat">{{item.id}}</div>
+      <div class="id-card-cat">Id:{{item.id}}</div>
       <div class="photo-pagination">
         <img src="{{item.url}}">
       </div>

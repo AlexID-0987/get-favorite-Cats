@@ -42,7 +42,7 @@ cangetAllCategories(categories:string){
      console.log(this.catsJson)
      if(this.catsJson.length===0)
      {
-       this.messageFirst='I`m loading'
+       this.messageFirst='Errors!'
      }
      else {
        if (this.cangetCats == '6') {

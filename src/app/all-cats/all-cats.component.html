@@ -6,7 +6,7 @@
   <div class="part-card">
     <div *ngIf="itemCat">
       <div *ngFor="let itemcat of objectKeys(itemCat)">
-        <p>{{itemCat[itemcat[0]].id}}</p>
+        <p>Id:{{itemCat[itemcat[0]].id}}</p>
         <div class="photo-cat">
           <img src="{{itemCat[itemcat[0]].url}}">
         </div>
@@ -16,16 +16,16 @@
 </div>
   <div *ngIf="itemCat" class="cat-info" class="second-part">
     <div *ngFor="let itemcat1 of objectKeys(itemCat)">
-      <p>{{itemCat[itemcat1[0]].breeds[0].id}}</p>
-      <p>{{itemCat[itemcat1[0]].breeds[0].name}}</p>
-      <p>{{itemCat[itemcat1[0]].breeds[0].temperament}}</p>
-      <p>{{itemCat[itemcat1[0]].breeds[0].description}}</p>
+      <p>Id:{{itemCat[itemcat1[0]].breeds[0].id}}</p>
+      <p>Name:{{itemCat[itemcat1[0]].breeds[0].name}}</p>
+      <p>Temperament:{{itemCat[itemcat1[0]].breeds[0].temperament}}</p>
+      <p>Information:{{itemCat[itemcat1[0]].breeds[0].description}}</p>
       <div class="link-part">
       <div>
-        <a href="{{itemCat[itemcat1[0]].breeds[0].cfa_url}}">Linc</a>
+        <a href="{{itemCat[itemcat1[0]].breeds[0].cfa_url}}">About the cats</a>
       </div>
       <div>
-        <a href="{{itemCat[itemcat1[0]].breeds[0].vcahospitals_url}}">Linc</a>
+        <a href="{{itemCat[itemcat1[0]].breeds[0].vcahospitals_url}}">History breed</a>
       </div>
       </div>
     </div>
