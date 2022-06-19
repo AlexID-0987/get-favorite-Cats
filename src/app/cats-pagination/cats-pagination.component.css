@@ -1,0 +1,36 @@
+.photo-pagination{
+  width: 400px;
+
+
+}
+.photo-pagination img{
+  width: 60%;
+  border: 2px coral solid;
+  border-radius: 5px;
+}
+.card-pagination{
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+.global-cart{
+  border: 2px solid black;
+  margin: 2em;
+  background-color: darkgrey;
+}
+.id-card-cat{
+  text-align: center;
+}
+.container{
+
+}
+.form-select{
+  background-color: burlywood;
+}
+h1{
+  text-align: center;
+}
+.select-block{
+  display: grid;
+  grid-template-areas: '1fr 1fr 1fr';
+}

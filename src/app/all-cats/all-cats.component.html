@@ -1,0 +1,33 @@
+<div class="button-get-cat">
+  <button class="btn btn-primary" (click)="getCatBreed()">Load new cat</button>
+</div>
+<div class="first-card">
+<div class="first-part">
+  <div class="part-card">
+    <div *ngIf="itemCat">
+      <div *ngFor="let itemcat of objectKeys(itemCat)">
+        <p>{{itemCat[itemcat[0]].id}}</p>
+        <div class="photo-cat">
+          <img src="{{itemCat[itemcat[0]].url}}">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <div *ngIf="itemCat" class="cat-info" class="second-part">
+    <div *ngFor="let itemcat1 of objectKeys(itemCat)">
+      <p>{{itemCat[itemcat1[0]].breeds[0].id}}</p>
+      <p>{{itemCat[itemcat1[0]].breeds[0].name}}</p>
+      <p>{{itemCat[itemcat1[0]].breeds[0].temperament}}</p>
+      <p>{{itemCat[itemcat1[0]].breeds[0].description}}</p>
+      <div class="link-part">
+      <div>
+        <a href="{{itemCat[itemcat1[0]].breeds[0].cfa_url}}">Linc</a>
+      </div>
+      <div>
+        <a href="{{itemCat[itemcat1[0]].breeds[0].vcahospitals_url}}">Linc</a>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>

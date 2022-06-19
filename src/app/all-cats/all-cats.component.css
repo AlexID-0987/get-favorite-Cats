@@ -1,0 +1,32 @@
+.photo-cat{
+  width: 400px;
+margin: 1em;
+}
+.photo-cat img{
+  width: 70%;
+}
+.first-card{
+  width: auto;
+  height: auto;
+  background-color: darksalmon;
+  display: grid;
+  grid-template-areas: '1fr 1fr';
+  margin: 2em;
+
+}
+.button-get-cat{
+  text-align: center;
+}
+.first-part, .second-part{
+  border: 2px black solid;
+}
+.second-part p{
+  margin: 2em;
+}
+.part-card p{
+  text-align: center;
+}
+.link-part{
+  display: grid;
+  grid-template-areas: '1fr 1fr';
+}
